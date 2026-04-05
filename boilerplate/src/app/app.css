@@ -1,0 +1,25 @@
+.game-viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ui-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* This allows clicks to pass through empty space to the Pixi canvas */
+  pointer-events: none; 
+  padding: 20px;
+  color: white;
+}
+
+.hud button {
+  /* Re-enable clicks for actual UI elements */
+  pointer-events: auto; 
+  padding: 10px 20px;
+  cursor: pointer;
+}
